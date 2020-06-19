@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+*{
+	margin:0; padding:0;
+	text-decoration: none;
+	list-style: none;
+}
+header, section, footer{
+	width: 1200px;
+	position: absolute;
+	left: 50%
+}
+header::before, section::before, footer::before,
+header::after, section::after, footer::after{
+	display: block;
+	content: "";
+}
+header::after, section::after, footer::after{
+	clear: both;
+}
+.login{
+	position: absolute;
+	float: left;
+}
+.login> ul{
+	text-align: right;
+}
+.login> ul> li{
+	float: left;
+	margin: 10px;
+}
